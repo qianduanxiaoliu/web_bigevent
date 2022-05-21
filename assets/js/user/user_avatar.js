@@ -54,8 +54,11 @@ $(function () {
 				console.log(res);
 				if (res.status !== 0) return layer.msg('修改图片失败');
 				layer.msg('修改图片成功');
-        window.parent.getUserInfo();
-        // $('#image').attr('src', res.responseJSON.data[user_pic]);
+				// $('#img').attr('src', dataURL);
+
+				// console.log($('#image'));
+
+				window.parent.getUserInfo();
 			}
 		});
 	});
