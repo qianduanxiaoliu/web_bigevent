@@ -15,7 +15,7 @@ $(function () {
 			type: 'GET',
 			url: '/my/userinfo',
 			success: (res) => {
-				console.log(res);
+				// console.log(res);
 				if (res.status !== 0) return layer.msg('获取用户信息失败');
 				layer.msg('获取用户信息成功');
 				// 快速给表单赋值

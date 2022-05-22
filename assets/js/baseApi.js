@@ -12,7 +12,7 @@ $.ajaxPrefilter((option) => {
 
   // 统一处理权限问题
 	option.complete = (res) => {
-		console.log(res);
+		// console.log(res);
     if (res.responseJSON.status == 1 && res.responseJSON.message == '身份认证失败！') {
       // 清空token 并跳转页面
 			localStorage.removeItem('token');

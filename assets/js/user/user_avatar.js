@@ -51,7 +51,7 @@ $(function () {
 				avatar: dataURL
 			},
 			success: (res) => {
-				console.log(res);
+				// console.log(res);
 				if (res.status !== 0) return layer.msg('修改图片失败');
 				layer.msg('修改图片成功');
 				// $('#img').attr('src', dataURL);

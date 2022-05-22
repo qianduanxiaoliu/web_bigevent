@@ -20,7 +20,7 @@ function getUserInfo() {
 		// 	Authorization: localStorage.getItem('token')
 		// },
 		success: function (res) {
-			console.log(res);
+			// console.log(res);
 			if (res.status !== 0) return layui.layer.msg('请求数据失败');
 			layui.layer.msg('请求数据成功');
 			//调用渲染头像函数
@@ -55,3 +55,6 @@ const randerAvatar = (user) => {
 		$('.text-avatar').html(firstName).show();
 	}
 };
+function change() {
+	$('#art_list').addClass('layui-this').next().removeClass('layui-this');
+}
